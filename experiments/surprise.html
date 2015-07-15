@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Captain Hacker's Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+  <script>
+    function jetztGehtsLos() {
+      alert("Mann! - nicht klicken!!!");
+      alert("Jetzt musst du halt da durch");
+      alert("Jetzt müssen WIR da beide durch ");
+      alert("Was willst du jetzt tun?");
+      alert("KLICKEN?");
+      alert("Ok.");
+      alert("Muss kurz aufs Klo");
+      alert("WEEEEEHEEE DIR WENN DU WEG  GEHST");
+      alert("Trololololollololololl");
+      alert("Hihihihihihihihihihiii");
+      alert("Hahahahahahahahahahahahhh");
+      alert("Hohohohohohohohohohohohohooooo");
+      alert("(FLUUURP)");
+      alert("(SSSSSSSSSSSS)");
+      alert("(SCHEISSSSSSS)");
+      alert("(PUTZ,PUTZ,PUTZ)");
+      alert("(SPÜL,SPÜL,SPÜL)");
+      alert("Das tut gut :-)");
+      alert("Willst du wissen wer dir das angetan hat?");
+      alert("So blöd denn das sage ich dir erst am SCHLUSSSSSSSSSSS!");
+      alert("MUAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAAAAAAAAAA");
+      alert("Ich habe eine Frage");
+      alert("Wohnst du in Nidwalden?");
+      alert("Kennst du oder bist du sogar mit einem gewissen Rian in der Klasse?");
+      alert("Ok");
+      alert("FAIL");
+      alert("RIAN war`s");
+      alert("BYE BYE (schick es weiter)")
+    }
+
+    $(function() {
+      $('#name').change( function() {
+          console.log($('#name').val());
+        if ($('#name').val().length > 2) {
+          console.log($( this ).val());
+          $('#go-on').attr("disabled", false);
+        } else {
+          $('#go-on').attr("disabled", true);
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <section class="page-header">
+    <h1 class="project-name"></h1>
+    <h2 class="project-tagline">Überraschung</h2>
+  </section>
+
+    <section class="main-content">
+
+    <h3>ACHTUNG</h3>
+    <!--   <p>
+      Wie ist dein Name?
+      <input type="text" name="name" id='name' placeholder='Name…'>
+    </p> -->
+    <button id="go-on" type="button" onclick="jetztGehtsLos()">Nicht hier klicken</button>
+    </section>
+
+</body>
+</html>
